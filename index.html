@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en" ng-app="appModule">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Hanoi - Tel Aviv</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <!-- Bootstrap -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <!-- Modernizer -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/site.css">
+
+        <!-- The main Angular 2 Links via Angular CDN angularjs.org -->
+        <!-- Base -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+        <!-- The Angular Routes file -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.min.js"></script>
+
+        <script src="app/appModule.js"></script>
+        <script src="app/home/homeModule.js"></script>
+        <script src="app/about/aboutModule.js"></script>
+        <script src="app/menu/menuModule.js"></script>
+        <script src="app/booking/bookingModule.js"></script>
+        
+        <script src="assets/js/site.js"></script>
+
+    </head>
+    <body>
+
+        <header>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12">
+
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div ng-view></div>    
+                    </div>
+                </div>
+            </div>
+
+        </main>
+            
+        <footer>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12">
+                        
+                    </div>
+                </div>
+            </div>
+                
+        </footer>
+
+    </body>
+</html>
