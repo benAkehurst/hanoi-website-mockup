@@ -1,0 +1,84 @@
+/*Sets Parallax Img*/
+.parallax {
+	margin-top: 50px;
+	width: 100%;
+  /* The image used */
+  background-image: url("parallaxImg.jpg");
+  /* Set a specific height */
+  min-height: 850px; 
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.homeText {
+  text-align: center;
+}
+
+.homeResturantName {
+    background-color: #111;
+    color: #fff;
+    padding: 10px;
+    font-size: 17vw;
+}
+
+.homeDescription {
+  background-color: #111;
+  color: #fff;
+  padding: 10px;
+  font-size: 4vw;
+}
+
+/*Homepage Bottom text & images*/
+
+.homeBottomSection{
+	height:860px;
+}
+
+/*Sets each box to a square*/
+.topLeft, .topRight, .bottomLeft, .bottomRight {
+	height:430px;
+}
+
+.topLeft {
+	text-align: center;
+}
+
+.logoDescription {
+	width: 220px;
+	height: 220px;
+}
+
+.topRight {
+  background-image: url('dish1.jpg');
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bottomLeft {
+	background-image: url('dish2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bottomLeft {
+	
+}
+
+.bottomRight {
+  text-align: center;
+	
+}
+
+.mapContact {
+  margin-top: 10%;
+}
+
+.openNow {
+  font-weight: bold;
+  color:green;
+}

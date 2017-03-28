@@ -26,56 +26,43 @@
         
         <!-- CSS -->
         <link rel="stylesheet" href="assets/css/site.css">
+        <!-- Link to Font Awesome -->
+        <script src="https://use.fontawesome.com/7d0faa3ea8.js"></script>
 
-        <!-- The main Angular 2 Links via Angular CDN angularjs.org -->
+        <!-- The main AngularJS Links via Angular CDN angularjs.org -->
         <!-- Base -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
         <!-- The Angular Routes file -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.min.js"></script>
 
         <script src="app/appModule.js"></script>
-        <script src="app/home/homeModule.js"></script>
-        <script src="app/about/aboutModule.js"></script>
-        <script src="app/menu/menuModule.js"></script>
-        <script src="app/booking/bookingModule.js"></script>
-        
+        <script src="app/homeModule.js"></script>
+        <script src="app/aboutModule.js"></script>
+        <script src="app/menuModule.js"></script>
+        <script src="app/bookingModule.js"></script>
         <script src="assets/js/site.js"></script>
 
     </head>
     <body>
 
         <header>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-12">
-
-                    </div>
-                </div>
-            </div>
+            <div ng-include="'assets/html/header.html'"></div>
         </header>
 
         <main>
-            
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div ng-view></div>    
-                    </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div ng-view></div>    
                 </div>
             </div>
-
         </main>
             
         <footer>
-
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-12">
-                        
-                    </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div ng-include="'assets/html/footer.html'"></div>
                 </div>
-            </div>
-                
+            </div>                
         </footer>
 
     </body>
