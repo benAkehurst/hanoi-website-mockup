@@ -39,6 +39,15 @@
 
 	});
 
+	// Make a directive that goes in a div and shows rights:
+	// All Rights Reserved &copy; This year
+	appModule.directive("ngPageRights", function(){
+		var d = new Date();
+		var year = d.getFullYear();
+		return {
+			template:'<p>All Rights Reserved &copy; ' + year +'</p>'
+		};
+	});
 
 
 })();

@@ -1,3 +1,14 @@
+/*Collection of fonts being bought in from Google Fonts*/
+/*
+font-family: 'Lato', sans-serif;
+font-family: 'Slabo 27px', serif;
+font-family: 'Space Mono', monospace;
+font-family: 'Montserrat', sans-serif;
+*/
+
+/*HOMEPAGE STYLEING*/
+
+/*Parallax IMAGE + TEXT*/
 /*Sets Parallax Img*/
 .parallax {
 	margin-top: 50px;
@@ -13,10 +24,13 @@
   background-size: cover;
 }
 
+/*The text div ontop of the parallax image*/
 .homeText {
   text-align: center;
+  font-family: 'Slabo 27px', serif;
 }
 
+/*Hanoi on homepage*/
 .homeResturantName {
     background-color: #111;
     color: #fff;
@@ -24,6 +38,7 @@
     font-size: 17vw;
 }
 
+/*Text over parallax image under Hanoi*/
 .homeDescription {
   background-color: #111;
   color: #fff;
@@ -31,14 +46,17 @@
   font-size: 4vw;
 }
 
+/*Down image under Text description*/
 .downButton {
   width: 100px;
   height: 100px;
   margin-top: 10px;
 }
 
+
 /*Homepage Bottom text & images*/
 
+/*Adds shadow to and defines hight of bottom part of the page*/
 .homeBottomSection{
   -webkit-box-shadow: -2px -2px 9px #C0C0C0;
   -moz-box-shadow: -2px -2px 9px #C0C0C0;
@@ -55,6 +73,7 @@
 	text-align: center;
 }
 
+/*Logo in the top left box*/
 .logoDescription {
 	width: 220px;
 	height: 220px;
@@ -74,20 +93,21 @@
   background-size: cover;
 }
 
-.bottomLeft {
-	
-}
-
+/* MAP AND OPENING BOX*/
 .bottomRight {
   text-align: center;
-	
 }
-
+/*Google maps API GET*/
 .mapContact {
   margin-top: 10%;
 }
 
+/*OPEN NOW from scope*/
 .openNow {
   font-weight: bold;
   color:green;
+}
+
+.box {
+  display: inline-block;
 }
