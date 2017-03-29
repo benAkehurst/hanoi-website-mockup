@@ -11,7 +11,11 @@
 
 		$scope.checkLocalTime = checkTime();
 
-
+		$("#moveup").click(function(){
+		  $("html, body").stop().animate({
+		    scrollTop: $('#tabs').offset().top - 40
+		  }, '500', 'linear');
+		});
 
 	});
 
@@ -20,26 +24,23 @@
 			var d = new Date();
 			var h = d.getHours();
 	    	var m = d.getMinutes();
-	    	var s = d.getSeconds();
 	    	m = checkMinutes(m);
 
 	    	var time = h + ":" + m;
 
-	    	if (time > "12:00" || time < "16:30"){
+	    	if (time >= "12:00" || time <= "16:30" && time >= "18:00" || time <= "00:00"){
 	    		return "OPEN NOW";
 	    	}
-	    	
-	    	else if (time > "18:00" || time < "00:00"){
-	    		return "OPEN NOW";
-	    	}
-			
+	    	else {
+	    		return "CLOSED NOW";
+	    	}	
 	}
 
-		function checkMinutes(i) {
+	function checkMinutes(i) {
 		    if (i < 10) {
 		        i = "0" + i;
 		    }
 		    return i;
-		}
+	}
 
 })();

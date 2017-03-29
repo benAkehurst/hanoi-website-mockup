@@ -31,9 +31,18 @@
   font-size: 4vw;
 }
 
+.downButton {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+}
+
 /*Homepage Bottom text & images*/
 
 .homeBottomSection{
+  -webkit-box-shadow: -2px -2px 9px #C0C0C0;
+  -moz-box-shadow: -2px -2px 9px #C0C0C0;
+  box-shadow: -2px -2px 9px #C0C0C0;
 	height:860px;
 }
 
