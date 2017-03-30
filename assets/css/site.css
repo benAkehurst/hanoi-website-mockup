@@ -110,4 +110,5 @@ font-family: 'Montserrat', sans-serif;
 
 .box {
   display: inline-block;
+  margin-left: 5px;
 }
