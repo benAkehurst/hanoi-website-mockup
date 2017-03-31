@@ -2,3 +2,19 @@
 <h1>About the resturant</h1>
 <h1>About asian food</h1>
 <h1>About - pull reviews from trip advisor?</h1>
+
+
+
+<table>
+	<tr>
+		<th>Reviewer</th>
+		<th>Review</th>
+	</tr>
+			
+	<!-- item is anyone of the products in the collections -->
+	<!-- | filer is a newly created filter that filers the text from the box -->
+	<tr ng-repeat="item in reviews">
+		<td>{{item.author_name}}</td>
+		<td>{{item.text}}</td>
+	</tr>
+</table>

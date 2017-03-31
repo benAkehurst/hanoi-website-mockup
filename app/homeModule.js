@@ -13,6 +13,7 @@
 		// Runs the function to check the time and allows for display
 		$scope.checkLocalTime = checkTime();
 
+		// TODO: CHANGE THE IDS IN THE HTML
 		// Initiates the ablilty for clicking the arrow to allow auto scroll
 		$("#moveup").click(function(){
 		  $("html, body").stop().animate({
