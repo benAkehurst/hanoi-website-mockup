@@ -10,6 +10,7 @@
 		// AIzaSyBKs2JPf2BmSP9RkZyBlvGtwWU1UjV5IGI - Google Details API Key 
 		// https://maps.googleapis.com/maps/api/place/details/json?placeid=ChIJ096sZJxMHRUROKs1iZd1Xps&key=AIzaSyBKs2JPf2BmSP9RkZyBlvGtwWU1UjV5IGI
 
+		// HTTP GET pulls Google Details data about the resturant to use user reviews on scope
 		$http({
 			method: 'GET',
 			url: 'https://maps.googleapis.com/maps/api/place/details/json?placeid=ChIJ096sZJxMHRUROKs1iZd1Xps&key=AIzaSyBKs2JPf2BmSP9RkZyBlvGtwWU1UjV5IGI'})

@@ -159,19 +159,19 @@ font-family: 'Montserrat', sans-serif;
 }
 
 /*Link buttons styling*/
-.aboutInternalLinks > span > span > a {
+.aboutInternalLinks > a {
   color: #f1c40f;
   text-decoration: none;
 }
 
 /* unvisited link */
-.aboutInternalLinks > span > span > a:link {
+.aboutInternalLinks >  a:link {
   color: #f1c40f;
   text-decoration: none;
 }
 
 /* mouse over link */
-.aboutInternalLinks > span > span > a:hover {
+.aboutInternalLinks > a:hover {
   color: #f1c40f;
   text-decoration: none;
 }
@@ -188,7 +188,14 @@ font-family: 'Montserrat', sans-serif;
   height: 75px;
 }
 
+/* MENU PAGE */
 
+.hanoiMenu {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Booking Page */
 
 /*FOOTER*/
 footer {
