@@ -112,3 +112,72 @@ font-family: 'Montserrat', sans-serif;
   display: inline-block;
   margin-left: 5px;
 }
+
+/*ABOUT US PAGE*/
+
+/*The main page container*/
+.aboutUsContainer {
+  margin-top: 50px;
+  background-color: #e74c3c;
+}
+
+/*about us text, buttons, reviews*/
+.aboutLeft {
+  font-family: 'Space Mono', monospace;
+  text-shadow: 1px 1px 0px #000000;
+  color: #f1c40f;
+}
+
+/*Text at top of about*/
+.aboutUsContainer {
+  text-align: center;
+}
+
+.aboutText {
+  font-size: 24px;
+  color: #f1c40f;
+  text-shadow: 1px 1px 0px #000000;
+}
+
+/*Link buttons*/
+.aboutInternalLinks {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.aboutInternalLinks > div {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  text-align: center;
+}
+
+.aboutMenuButton, .aboutBookingButton{
+  background-color: #111;
+  padding: 10px;
+  margin: 10px 10px 10px 10px;
+}
+
+/*Link buttons styling*/
+.aboutInternalLinks > span > span > a {
+  color: #f1c40f;
+  text-decoration: none;
+}
+
+/* unvisited link */
+.aboutInternalLinks > span > span > a:link {
+  color: #f1c40f;
+  text-decoration: none;
+}
+
+/* mouse over link */
+.aboutInternalLinks > span > span > a:hover {
+  color: #f1c40f;
+  text-decoration: none;
+}
+
+
+/*FOOTER*/
+footer {
+  margin-top: 15px;
+}
