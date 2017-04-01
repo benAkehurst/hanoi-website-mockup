@@ -16,10 +16,11 @@
 			
 			.then(function successCallback(response) {
 		    	// Testing Response to find correct element
-		    	var reviews = response.data.result;
+		    	// var reviews = response.data.result;
 		    	// var reviewerName = response.data.result.reviews[0].author_name;
 		    	// var reviewerText = response.data.result.reviews[0].text;
-		    	console.log(reviews);
+		    	// var reviewerText = response.data.result.reviews[0].text;
+		    	// console.log(reviews);
 		    	// console.log(reviewerName);
 		    	// console.log(reviewerText);
 

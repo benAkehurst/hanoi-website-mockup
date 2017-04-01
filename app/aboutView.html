@@ -4,6 +4,7 @@
 
 	<div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			
 			<div class="aboutLeft">
 
 				<div class="aboutText">
@@ -22,15 +23,25 @@
 						</span>
 					</span>
 				</div>
-
+				
 				<div class="aboutReviws">
-				<h2>Recent Reviews</h2>
-					<table class="aboutReviewTable">
-						<tr ng-repeat="item in reviews">
-							<td>{{item.author_name}}</td>
-							<td>{{item.text}}</td>
-						</tr>
-					</table>
+					<div class="aboutReviewsTitle">
+						<h2>Recent Reviews</h2>
+					</div>
+					
+					<div ng-repeat="item in reviews">
+
+					<div class="reviewContainer">
+						
+						<div class="reviewImg">
+							<img ng-src="{{item.profile_photo_url}}" alt="">
+								<span>{{item.author_name}}</span>
+						</div>
+						
+						<div class="reviewText">
+							<span>{{item.text}}</span>
+						</div>
+					</div>
 				</div>
 
 			</div>

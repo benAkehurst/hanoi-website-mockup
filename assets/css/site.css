@@ -176,6 +176,19 @@ font-family: 'Montserrat', sans-serif;
   text-decoration: none;
 }
 
+.reviewContainer {
+  margin-bottom: 25px;
+}
+.reviewImg, .reviewAuthor, .reviewText {
+  text-align: left;
+}
+
+.reviewImg > img{
+  width: 75px;
+  height: 75px;
+}
+
+
 
 /*FOOTER*/
 footer {
