@@ -1,7 +1,61 @@
-<h1>Booking</h1>
-<h1>Booking - MAP</h1>
-<h1>Booking - OPENING TIMES</h1>
-<h1>Booking - PHONE</h1>
-<h1>Booking - CONTACT FORM FOR BOOKING</h1>
-	<h2>NAME, DATE, # of DINERS, PHONE, BOOK BUTTON</h2>
-	<h2>Modal popup saying "we'll be intouch"</h2>
+<div class="container-fluid bookingContainer">	
+	
+	<div class="row">
+
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+			<h2>Booking</h2>		
+			<h3>You can find us at: {{address}}</h3>
+			<h4>We are open {{openHours}}.</span>
+			<h4>Our phone number is {{phoneNumber}}.</h4>
+			<h4>Right now we are {{checkLocalTime}}.</h4>
+			<h4>If you are a party of more that 8 people, please call to book.</h4>
+
+			<iframe width="100%" height="350" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBiYQ8BZdwPg6tQRuqBbbPxPyPlxTpx2Ek&q=Hanoi,TelAviv&zoom=16" allowfullscreen></iframe>
+			
+		</div>
+
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+			<div class="row bookingFormCont">
+				<div class="bookingForm">
+					<h2>Book a table</h2>
+					<form>
+						<div class="formTopRow">
+							<span class="customerName">
+								<input type="text" name="custName" placeholder="Your Name" required>
+							</span>
+							<span class="customerNum">
+								<input type="number" name="custNumber" placeholder="Your Phone number" required>
+							</span>
+						</div>
+
+						<div class="formMiddleRow">
+							<label>Date: <input type="date" name="custDate" required></label> 
+								
+							<label>Time: <select ng-model="diningTimes.model" ng-options="option.displayTime for option in diningTimes.avaliableOptions track by option.id" required>
+								</select></label> 
+								
+						</div>
+
+						<div class="formNumOfDiners">
+							
+							<label>Numer of Diners:</label>
+
+							<span class="glyphicon glyphicon-minus minus" ng-click="Decrese();"></span>
+							
+							<span>{{dinerNumbers[current].number}}</span>
+							
+							<span class="glyphicon glyphicon-plus plus" ng-click="Increse();"></span>
+
+						</div>
+						
+						<div class="formButton">	
+							<button class="button">Book Now</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>

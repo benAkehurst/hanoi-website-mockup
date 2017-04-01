@@ -32,12 +32,12 @@
 
 	    	var time = h + ":" + m;
 
-	    	if (time >= "12:00" || time <= "16:30" && time >= "18:00" || time <= "00:00"){
+	    	if (time >= "12:00" || time <= "16:30" || time >= "18:00" || time <= "00:00"){
 	    		return "OPEN NOW";
 	    	}
 	    	else {
 	    		return "CLOSED NOW";
-	    	}	
+	    	}
 	}
 
 	function checkMinutes(i) {
